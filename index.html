@@ -75,8 +75,8 @@
 
       .wordmark-insert-wrapper {
         position: absolute;
-        left: 32%;          /* more left between THE and POLO */
-        top: -1.7em;        /* closer down toward THE POLO WAY */
+        left: 32%;          /* between THE and POLO */
+        top: -1.7em;        /* closer to THE POLO WAY */
         transform: translateX(-50%) rotate(-8deg);
         text-align: center;
         pointer-events: none;
@@ -84,7 +84,7 @@
 
       .wordmark-insert-word {
         font-family: "Caveat", cursive;
-        font-size: 1.35rem; /* bigger cowboy */
+        font-size: 1.35rem;
         text-transform: none;
         color: var(--accent);
         white-space: nowrap;
@@ -193,6 +193,8 @@
         border: 1px solid #3a2b16;
         box-shadow: 0 18px 60px rgba(0, 0, 0, 0.85);
         background: #000000;
+        /* make video appear black-and-white */
+        filter: grayscale(1);
       }
 
       .hero-video-inner iframe {
@@ -247,6 +249,28 @@
 
       .article-body em {
         color: var(--muted);
+      }
+
+      /* Inline photos */
+
+      .article-photo {
+        margin: 18px 0 8px;
+      }
+
+      .article-photo img {
+        width: 100%;
+        display: block;
+        border-radius: 14px;
+        border: 1px solid #3a2b16;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.9);
+        background: #000;
+      }
+
+      .article-photo figcaption {
+        margin-top: 6px;
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-align: center;
       }
 
       .coming-soon {
@@ -306,7 +330,7 @@
               <div class="kicker">Feature Film</div>
               <h1 class="feature-title">Western Polo the Movie</h1>
               <p class="feature-subtitle">
-                A cinematic look at Western polo in Wyoming — the roots and rhythm of cowboy polo on dirt.
+                A cinematic look at Western-style arena polo in Wyoming — the roots and rhythm of cowboy polo on dirt.
               </p>
               <div class="meta">Film • Western Polo • Wyoming</div>
 
@@ -361,6 +385,18 @@
                   without needing a valet to hold their mallets.
                 </p>
 
+                <!-- PHOTO #1: between third paragraph and second section title -->
+                <figure class="article-photo">
+                  <!-- Replace src with your actual image path -->
+                  <img
+                    src="images/cowboy-polo-arena.jpg"
+                    alt="Cowboy polo match in a dirt arena under arena lights"
+                  />
+                  <figcaption>
+                    Cowboy polo the way it began — on dirt, under arena lights, with working cow horses.
+                  </figcaption>
+                </figure>
+
                 <h2>The Birth of a Southern Polo Tradition</h2>
 
                 <p>
@@ -402,6 +438,18 @@
                     The game became a faster, grittier, cowboy-style battle.
                   </li>
                 </ul>
+
+                <!-- PHOTO #2: above the "By 1959..." paragraph -->
+                <figure class="article-photo">
+                  <!-- Replace src with your actual image path -->
+                  <img
+                    src="images/palmetto-polo-horses.jpg"
+                    alt="Western riders and cow horses preparing for a Palmetto Polo match"
+                  />
+                  <figcaption>
+                    Reined cow horses and Western riders feeding the Palmetto Polo and Cowboy Polo pipeline.
+                  </figcaption>
+                </figure>
 
                 <p>
                   By 1959, the sport had evolved, and what was once known as Palmetto Polo was renamed Cowboy Polo,
