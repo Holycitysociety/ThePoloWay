@@ -1,1 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Polo Way – The Origins of Cowboy Polo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The origins of Cowboy Polo and the Southern Palmetto Polo tradition – a new American pipeline for riders, horses, and patrons."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #000000;
+        --fg: #f7f7f7;
+        --muted: #c7c7c7;
+        --ink: #111111;
+        --border: #333333;
+        --accent: #d0a86e;
+        --accent-soft: rgba(208, 168, 110, 0.16);
+        --max-width: 820px;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "EB Garamond", serif;
+        background:
+          radial-gradient(circle at top, #17130b 0, #050507 50%, #000000 100%),
+          #000000;
+        color: var(--fg);
+        display: flex;
+        justify-content: center;
+      }
+
+      .page {
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 32px 18px 64px;
+      }
+
+      header.site-header {
+        margin-bottom: 32px;
+      }
+
+      .wordmark {
+        font-family: "Cinzel", serif;
+        font-size: 0.8rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .wordmark-span {
+        padding: 3px 9px 3px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      main {
+        background: radial-gradient(circle at top, #17130b 0, #050507 50%, #020203 100%);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 26px 70px rgba(0, 0, 0, 0.95);
+        padding: 26px 20px 26px;
+      }
+
+      @media (min-width: 768px) {
+        main {
+          padding: 30px 36px 30px;
+        }
+      }
+
+      article {
+        position: relative;
+      }
+
+      article::before {
+        /* faint frame hinting at an arena / VR viewport */
+        content: "";
+        position: absolute;
+        inset: 7% 6%;
+        border-radius: 16px;
+        border: 1px solid rgba(208, 168, 110, 0.18);
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      .article-inner {
+        position: relative;
+        z-index: 1;
+      }
+
+      .kicker {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--accent);
+        margin-bottom: 8px;
+      }
+
+      .article-title {
+        font-family: "Cinzel", serif;
+        font-size: clamp(2rem, 4vw, 2.6rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin: 0 0 6px;
+      }
+
+      .article-subtitle {
+        font-size: 1.05rem;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+
+      .meta {
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 22px;
+      }
+
+      .hero-video-wrapper {
+        margin: 0 0 24px;
+      }
+
+      .hero-video-inner {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #3a2b16;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.85);
+        background: #000000;
+      }
+
+      .hero-video-inner iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
+
+      .article-body h2 {
+        font-family: "Cinzel", serif;
+        font-size: 1.3rem;
+        margin: 26px 0 8px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .article-body p {
+        font-size: 1.02rem;
+        line-height: 1.75;
+        color: var(--fg);
+        margin: 0 0 14px;
+      }
+
+      .article-body ul {
+        margin: 10px 0 16px 1.1rem;
+        padding: 0;
+      }
+
+      .article-body li {
+        font-size: 1.02rem;
+        line-height: 1.7;
+        color: var(--fg);
+        margin-bottom: 4px;
+      }
+
+      .article-body em {
+        color: var(--muted);
+      }
+
+      .coming-soon {
+        margin-top: 26px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 0.95rem;
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: baseline;
+      }
+
+      .coming-soon-label {
+        font-family: "Cinzel", serif;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.73rem;
+        color: var(--accent);
+      }
+
+      .coming-soon strong {
+        font-family: "Cinzel", serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      footer.site-footer {
+        margin-top: 18px;
+        font-size: 0.78rem;
+        color: #777;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="wordmark">
+          <span class="wordmark-span">THE POLO WAY</span>
+        </div>
+      </header>
+
+      <main>
+        <article>
+          <div class="article-inner">
+            <div class="kicker">Origins of Cowboy Polo</div>
+            <h1 class="article-title">Palmetto Polo: The South’s Homegrown Expression of the Game of Kings</h1>
+            <p class="article-subtitle">
+              How cowboys and equestrians in the Southeast gave polo a distinctly American, Western twist.
+            </p>
+            <div class="meta">Feature • Cowboy Polo History • South Carolina</div>
+
+            <div class="hero-video-wrapper">
+              <div class="hero-video-inner">
+                <!-- Embedded YouTube video -->
+                <iframe
+                  src="https://www.youtube.com/embed/KKxd_RnlVSU"
+                  title="The Origins of Cowboy Polo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="article-body">
+              <h2>A Sport for the Lowcountry and the Backcountry</h2>
+
+              <p>
+                In South Carolina, where horse culture runs deep from Camden to Aiken, polo has long been a part of the
+                landscape. But beyond the stately fields of the English equestrian set, another caliber of rider—cowboys,
+                rodeo competitors, and working horsemen—eager to play more of the sport, began playing a uniquely
+                American expression of the game.
+              </p>
+
+              <p>
+                They didn’t have Argentine thoroughbreds or manicured turf, but they had what was needed: reined cow
+                horses, rodeo arenas, and a taste for high-speed, hard-hitting competition. The result was Palmetto
+                Polo—a distinctly Southern version of polo played in dirt arenas, using western saddles, reined cow
+                horses, and a style that was more cowboy and cattle drive than country club and cocktail hour.
+              </p>
+
+              <p>
+                It was a way for Southerners to take the game back from the English and their Northeastern imitators,
+                who had turned polo into yet another imported, exclusive pastime. While they sipped cocktails in their
+                linen whites, down South, real horsemen were breaking colts, reining cow horses, and riding hard—all
+                without needing a valet to hold their mallets.
+              </p>
+
+              <h2>The Birth of a Southern Polo Tradition</h2>
+
+              <p>
+                By the mid-20th century, South Carolina had already carved out a reputation as a polo powerhouse,
+                particularly in Aiken, which served as a winter retreat for the Northeastern polo set.
+              </p>
+
+              <p>
+                Having been exposed to polo, but being primarily a Northeastern sport at that time, Southern horsemen and
+                rodeo riders saw an opportunity to take the game in an entirely organic American direction—one that fit
+                the land, the culture, and the cow horses they already had.
+              </p>
+
+              <p>
+                In many ways, their approach mirrored what Argentina had been perfecting for 50 years. Down there,
+                gauchos weren’t just part of the culture—they built the foundation for Argentina’s polo dominance.
+                Ranchers and working horsemen naturally fed into the sport, ensuring a steady supply of tough, agile
+                ponies and fearless riders who grew up mastering the art of riding before ever picking up a mallet.
+              </p>
+
+              <p>
+                In the same way, Palmetto Polo emerged as an accessible alternative for American cowboys and Western
+                riders. Instead of importing ponies and players, these riders adapted the game to their own horses, their
+                own arenas, and their own way of riding.
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Western tack and reined cow horses –</strong>
+                  Instead of polo ponies, they used reined cow horses trained for agility, quick stops, and working
+                  cattle.
+                </li>
+                <li>
+                  <strong>Rodeo arenas instead of grass fields –</strong>
+                  Polo was played on dirt and clay, inside fairground arenas, making it more accessible.
+                </li>
+                <li>
+                  <strong>More cowboy –</strong>
+                  The game became a faster, grittier, cowboy-style battle.
+                </li>
+              </ul>
+
+              <p>
+                By 1959, the sport had evolved, and what was once known as Palmetto Polo was renamed Cowboy Polo,
+                aligning with its growing popularity beyond South Carolina. As the game spread to Florida, Texas, and
+                across the West, the cowboy influence solidified, and the Palmetto Polo name faded into history.
+              </p>
+
+              <p>
+                Now, over 60 years later, the Cowboy Polo Circuit is here—not just as a revival, but as a movement to
+                reshape the future of American polo. The Cowboy Polo Circuit isn’t about preserving tradition for the
+                elite—it’s about eliminating the gatekeeping that has kept talented riders from reaching the highest
+                levels of the game.
+              </p>
+
+              <p>
+                For decades, Argentina has produced generations of dominant 10-goal players because they have a system
+                that develops talent from the ground up. The U.S. has never had that—not because the talent isn’t here,
+                but because the opportunities weren’t. Until now.
+              </p>
+
+              <p>
+                The Cowboy Polo Circuit is building a new American pipeline, where cow horse riders, rodeo athletes, and
+                Western competitors can step into the sport and prove themselves based on skill—not access. Polo doesn’t
+                belong to an exclusive few. It belongs to the best riders in the country.
+              </p>
+
+              <p>
+                This isn’t just a revival—it’s a return to the way American polo was meant to be played: fast, tough, and
+                unmistakably American. And this time, it won’t be reserved for a select few. The next American 10-goal
+                player won’t come from English polo—they’ll be made in the Cowboy Polo Circuit.
+              </p>
+
+              <div class="coming-soon">
+                <span class="coming-soon-label">Coming Soon</span>
+                <span>
+                  <strong>The Polo Way</strong> — a VR scouting lane where riders can film their Cowboy Polo journey and
+                  patrons can discover the next generation of horses and players.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        &copy; <span id="year"></span> The Polo Way &mdash; Cowboy Polo Circuit.
+      </footer>
+
+      <script>
+        // simple year stamp
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </div>
+  </body>
+</html>
