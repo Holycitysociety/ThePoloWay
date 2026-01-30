@@ -8,8 +8,9 @@
       name="description"
       content="The origins of Cowboy Polo and the Southern Palmetto Polo tradition – a new American pipeline for riders, horses, and patrons."
     />
+    <!-- Added Caveat for handwritten insert -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600&family=Caveat:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -48,12 +49,12 @@
 
       header.site-header {
         margin-bottom: 32px;
-        text-align: center; /* center the wordmark */
+        text-align: center;
       }
 
       .wordmark {
         font-family: "Cinzel", serif;
-        font-size: 1.5rem; /* larger logo text */
+        font-size: 1.5rem;
         letter-spacing: 0.32em;
         text-transform: uppercase;
         color: var(--fg);
@@ -114,6 +115,36 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin: 0 0 6px;
+        position: relative;
+      }
+
+      /* Editorial insert styling */
+
+      .title-insert-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 3.1em; /* reserves horizontal space between Palmetto and Polo */
+      }
+
+      .title-insert-caret {
+        position: absolute;
+        left: 50%;
+        bottom: -0.35em;
+        transform: translateX(-50%);
+        font-size: 0.8em;
+        color: var(--accent);
+      }
+
+      .title-insert-word {
+        position: absolute;
+        left: 50%;
+        bottom: 1.15em;
+        transform: translateX(-50%) rotate(-5deg);
+        font-family: "Caveat", cursive;
+        font-size: 0.9em;
+        text-transform: none;
+        color: var(--accent);
+        white-space: nowrap;
       }
 
       .article-subtitle {
@@ -228,9 +259,17 @@
         <article>
           <div class="article-inner">
             <div class="kicker">Origins of Cowboy Polo</div>
+
+            <!-- Title with editorial insert: Palmetto ^ cowboy Polo -->
             <h1 class="article-title">
-              Palmetto Polo: The South’s Homegrown Expression of the Game of Kings
+              Palmetto
+              <span class="title-insert-wrapper">
+                <span class="title-insert-caret">^</span>
+                <span class="title-insert-word">cowboy</span>
+              </span>
+              Polo: The South’s Homegrown Expression of the Game of Kings
             </h1>
+
             <p class="article-subtitle">
               How cowboys and equestrians in the Southeast gave polo a distinctly American, Western twist.
             </p>
@@ -254,8 +293,8 @@
 
               <p>
                 In South Carolina, where horse culture runs deep from Camden to Aiken, polo has long been a part of the
-                landscape. But beyond the stately fields of the English equestrian set, another caliber of rider—
-                cowboys, rodeo competitors, and working horsemen—eager to play more of the sport, began playing a uniquely
+                landscape. But beyond the stately fields of the English equestrian set, another caliber of rider—cowboys,
+                rodeo competitors, and working horsemen—eager to play more of the sport, began playing a uniquely
                 American expression of the game.
               </p>
 
