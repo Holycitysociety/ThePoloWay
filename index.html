@@ -193,27 +193,8 @@
         border: 1px solid #3a2b16;
         box-shadow: 0 18px 60px rgba(0, 0, 0, 0.85);
         background: #000000;
-
-        /* John Wayne–style muted Technicolor:
-           - slightly reduced contrast
-           - reduced saturation
-           - warm sepia cast
-           - tiny hue shift toward desert tones
-        */
-        position: relative;
-        filter: contrast(0.96) saturate(0.78) sepia(0.22) hue-rotate(-5deg);
-      }
-
-      .hero-video-inner::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        /* subtle warm wash + gentle vignette */
-        background:
-          radial-gradient(circle at top, rgba(255, 220, 180, 0.16) 0, transparent 45%),
-          radial-gradient(circle at center, transparent 0, transparent 58%, rgba(0, 0, 0, 0.4) 100%);
-        mix-blend-mode: soft-light;
+        /* make video appear black-and-white */
+        filter: grayscale(1);
       }
 
       .hero-video-inner iframe {
