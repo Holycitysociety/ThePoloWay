@@ -195,7 +195,7 @@
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;
-        border-radius: 14px;
+        border-radius: 0;           /* squared frame */
         overflow: hidden;
         border: 1px solid #3a2b16;
         box-shadow: 0 18px 60px rgba(0, 0, 0, 0.85);
@@ -316,7 +316,7 @@
       .article-photo img {
         width: 100%;
         display: block;
-        border-radius: 14px;
+        border-radius: 0;         /* squared frame */
         border: 1px solid #3a2b16;
         box-shadow: 0 18px 50px rgba(0, 0, 0, 0.9);
         background: #000;
@@ -336,7 +336,7 @@
         margin: 18px auto 12px;
         padding: 10px 10px 8px;
         background: #f7f7f7;
-        border-radius: 16px;
+        border-radius: 0;         /* squared card */
         box-shadow: none;
         border: none;
         max-width: 480px;   /* hard cap */
@@ -345,7 +345,7 @@
 
       .article-photo-palmetto img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 0;         /* squared image */
         border: none;
         box-shadow: none;
         background: #f7f7f7;
@@ -523,7 +523,7 @@
                 Palmetto Polo: from the lowcountry to the back country
               </h2>
 
-              <!-- Palmetto title photo with white card background, no border/shadow -->
+              <!-- Palmetto title photo with white card background, squared -->
               <figure class="article-photo article-photo-palmetto">
                 <img
                   src="images/palmetto-polo.jpg"
@@ -537,8 +537,6 @@
               <div class="meta"></div>
 
               <div class="article-body">
-                <h2></h2>
-
                 <p>
                   In South Carolina, where horse culture runs deep from Camden to Aiken, polo has long been a part of the
                   landscape. But beyond the stately fields of the English equestrian set, another caliber of rider—
@@ -568,8 +566,6 @@
                     Cowboy polo the way it began — on dirt, under arena lights, with working cow horses.
                   </figcaption>
                 </figure>
-
-                <h2></h2>
 
                 <p>
                   By the mid-20th century, South Carolina had already carved out a reputation as a polo powerhouse,
