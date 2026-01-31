@@ -194,10 +194,10 @@
       .hero-video-inner {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 9;
-        border-radius: 0;           /* squared frame */
+        aspect-ratio: 1 / 1; /* square frame */
+        border-radius: 0;
         overflow: hidden;
-        /* border removed to kill the pin line */
+        border: none; /* no border line */
         box-shadow: 0 18px 60px rgba(0, 0, 0, 0.85);
         background: #000000;
         /* slightly washed-out / archival look */
@@ -316,8 +316,8 @@
       .article-photo img {
         width: 100%;
         display: block;
-        border-radius: 0;         /* squared frame */
-        border: none;             /* no border line */
+        border-radius: 0; /* squared corners */
+        border: none;     /* remove border line */
         box-shadow: 0 18px 50px rgba(0, 0, 0, 0.9);
         background: #000;
       }
@@ -336,7 +336,7 @@
         margin: 18px auto 12px;
         padding: 10px 10px 8px;
         background: #f7f7f7;
-        border-radius: 0;         /* squared card */
+        border-radius: 16px;
         box-shadow: none;
         border: none;
         max-width: 480px;   /* hard cap */
@@ -345,8 +345,8 @@
 
       .article-photo-palmetto img {
         width: 100%;
-        border-radius: 0;         /* squared image */
-        border: none;             /* no border / pin line */
+        border-radius: 10px;
+        border: none;
         box-shadow: none;
         background: #f7f7f7;
       }
@@ -523,7 +523,7 @@
                 Palmetto Polo: from the lowcountry to the back country
               </h2>
 
-              <!-- Palmetto title photo with white card background, squared -->
+              <!-- Palmetto title photo with white card background, no border/shadow -->
               <figure class="article-photo article-photo-palmetto">
                 <img
                   src="images/palmetto-polo.jpg"
@@ -537,6 +537,8 @@
               <div class="meta"></div>
 
               <div class="article-body">
+                <h2></h2>
+
                 <p>
                   In South Carolina, where horse culture runs deep from Camden to Aiken, polo has long been a part of the
                   landscape. But beyond the stately fields of the English equestrian set, another caliber of rider—
@@ -546,14 +548,16 @@
 
                 <p>
                   They didn’t have Argentine thoroughbreds or manicured turf, but they had what was needed: good cow horses
-                  under them, rodeo arenas, and a taste for high-speed, hard-hitting competition.
+                  under them, rodeo arenas, and a taste for high-speed, hard-hitting competition. The result was Palmetto
+                  Polo—a distinctly Southern version of polo played in dirt arenas, using western saddles, reined cow
+                  horses, and a style that was more cowboy and cattle drive than country club and cocktail hour.
                 </p>
 
                 <p>
-                  It was a way for Southerners to take the game back from the English crowd and the clubhouse set up North,
-                  who had turned polo into yet another imported, exclusive pastime. While they sipped cocktails in their
-                  linen whites, down South, real horsemen were breaking colts, putting a handle on cow horses, and riding
-                  hard—all without needing a valet to hold their mallets.
+                  It was a way for Southerners to take the game back from the English crowd and the clubhouse set, who had
+                  turned polo into yet another imported, exclusive pastime. While they sipped cocktails in their linen
+                  whites, down South, real horsemen were breaking colts, putting a handle on cow horses, and riding hard—all
+                  without needing a valet to hold their mallets.
                 </p>
 
                 <!-- PHOTO #1: between third paragraph and second section title -->
@@ -566,6 +570,8 @@
                     Cowboy polo the way it began — on dirt, under arena lights, with working cow horses.
                   </figcaption>
                 </figure>
+
+                <h2></h2>
 
                 <p>
                   By the mid-20th century, South Carolina had already carved out a reputation as a polo powerhouse,
@@ -601,10 +607,7 @@
                     <strong>Rodeo arenas instead of grass fields –</strong>
                     Polo was played on dirt and clay, inside fairground arenas, making it more accessible.
                   </li>
-                  <li>
-                    <strong>More cowboy –</strong>
-                    The game turned faster, grittier, and a little more of a scrap in the dirt.
-                  </li>
+                  <!-- list item 3 (More cowboy) intentionally removed -->
                 </ul>
 
                 <!-- PHOTO #2: above the "By 1959..." paragraph -->
@@ -625,9 +628,9 @@
                 </p>
 
                 <p>
-                  Now, over 60 years later, the Cowboy Polo Circuit is here—not just as a revival, but as a working way to
-                  play polo on Western terms in America. The Cowboy Polo Circuit isn’t about preserving tradition for the
-                  elite—it’s about tearing down the fences that have kept talented riders from reaching the highest levels
+                  Now, over 60 years later, the Cowboy Polo Circuit is here—not just as a revival, but as a revolution to
+                  reshape the future of American polo. The Cowboy Polo Circuit isn’t about preserving tradition for the
+                  elite—it’s about eliminating the gatekeeping that has kept talented riders from reaching the highest levels
                   of the game.
                 </p>
 
@@ -638,15 +641,15 @@
                 </p>
 
                 <p>
-                  The Cowboy Polo Circuit is laying out a real way up for cow horse riders, rodeo athletes, and Western
-                  competitors to step into the sport and prove themselves based on skill—not access. Polo doesn’t belong to
-                  an exclusive few. It belongs to the best riders in the country.
+                  The Cowboy Polo Circuit is building a new American pipeline, where cow horse riders, rodeo athletes, and
+                  Western competitors can step into the sport and prove themselves based on skill—not access. Polo doesn’t
+                  belong to an exclusive few. It belongs to the best riders in the country.
                 </p>
 
                 <p>
                   This isn’t just a revival—it’s a return to the way American polo was meant to be played: fast, tough, and
                   unmistakably American. And this time, it won’t be reserved for a select few. The next American 10-goal
-                  player won’t come from English polo—they’ll come out of the Cowboy Polo Circuit.
+                  player won’t come from English polo—they’ll be made in the Cowboy Polo Circuit.
                 </p>
 
                 <!-- PHOTO #3: bottom image before coming-soon block -->
