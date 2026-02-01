@@ -194,7 +194,7 @@
       .hero-video-inner {
         position: relative;
         width: 100%;
-        aspect-ratio: 1 / 1; /* square frame */
+        aspect-ratio: 16 / 9; /* landscape frame to avoid cutting off thumbnail */
         border-radius: 0;
         overflow: hidden;
         border: none; /* no border line */
@@ -215,6 +215,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: #000; /* fallback so it's not a white box */
         position: relative;
         display: block;
       }
