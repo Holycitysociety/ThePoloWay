@@ -589,9 +589,8 @@ address {
   }
 
   h2 {
-    font-size: clamp(1.1rem, 4.8vw, 1.7rem);
-    line-height: 1.08;
-    max-width: none;
+    font-size: clamp(1.3rem, 6vw, 2.2rem);
+    line-height: 1.05;
   }
 
   h3 {
@@ -680,5 +679,13 @@ address {
 
   .footer-motto {
     font-size: 0.92rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.05rem;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    max-width: none;
+    text-wrap: balance;
   }
 }
